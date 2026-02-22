@@ -12,6 +12,18 @@ import reaksiya from "./assets/images/reaksiya.svg";
 import lists from "./assets/images/lists.svg";
 import money from "./assets/images/money.svg";
 
+// import BrandCarousel from "./BrandCarousel";
+
+// homiy
+import artisans from "./assets/images/artisans.svg";
+import boling from "./assets/images/boling.svg";
+import portkeys from "./assets/images/portkeys.svg";
+import synco from "./assets/images/synco.svg";
+
+// arrows
+import right from "./assets/images/right.svg";
+import left from "./assets/images/left.svg";
+
 const navLinks = [
   { id: 1, text: "Услуги", href: "#" },
   { id: 2, text: "Прайс-лист", href: "#" },
@@ -239,7 +251,7 @@ export default function App() {
         </section>
 
         {/* Section Products messages */}
-        <section className="py-[120px]">
+        <section className="py-[120px] bg-[#F5F5F5]">
           <div className="max-w-[1200px] w-[100%] mx-auto px-[15px]">
             <div className="flex items-center justify-between mb-[80px]">
               <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#000]">
@@ -255,38 +267,86 @@ export default function App() {
             </div>
 
             <div className="grid grid-cols-3 gap-[30px]">
-              <div className="">
+              <div className="pt-[35px] pb-[80px] px-[30px] bg-[#C4C4C4] rounded-[20px]">
                 <img src={reaksiya} alt="" className="mb-[30px]" />
                 <h3 className="max-w-[240px] font-inter font-semibold text-[30px] leading-[150%] mb-[25px]">
                   Удаленная диагностика
                 </h3>
-                <p className="">
+                <p className="font-inter font-normal text-[18px] leading-[175%]">
                   Проведем предварительную диагностику по видео с неисправностью
                   от клиента и сориентируем по стоимости ремонта
                 </p>
               </div>
 
-              <div className="">
+              <div className="pt-[35px] pb-[80px] pr-[34px] pl-[30px] bg-[#525252] rounded-[20px]">
                 <img src={lists} alt="" className="mb-[30px]" />
-                <h3 className="max-w-[270px] font-inter font-semibold text-[30px] leading-[150%] mb-[25px]">
+                <h3 className="max-w-[270px] font-inter font-semibold text-[30px] leading-[150%] mb-[25px] text-[#fff]">
                   Покажем причины неисправности
                 </h3>
-                <p className="">
+                <p className="font-inter font-normal text-[18px] leading-[175%] text-[#fff]">
                   Сделаем бесплатную диагностику и предоставим видео запись.
                   Инжинер даст комментарии о причинах неисправности, чтобы у вас
                   не осталось сомнений
                 </p>
               </div>
 
-              <div className="">
+              <div className="pt-[35px] pb-[80px] pr-[34px] pl-[30px] bg-[#D4636B] rounded-[20px]">
                 <img src={money} alt="" className="mb-[30px]" />
-                <h3 className="max-w-[200px] font-inter font-semibold text-[30px] leading-[150%] mb-[25px]">
+                <h3 className="max-w-[200px] font-inter font-semibold text-[30px] leading-[150%] mb-[25px] text-[#fff]">
                   Прозрачная цена
                 </h3>
-                <p className="">
+                <p className="font-inter font-normal text-[18px] leading-[175%] text-[#fff]">
                   Заранее согласуем цену, честную и конкурентную, которая
                   соответствует цене в прайс-листе на нашем сайте
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-[80px]">
+          <div className="max-w-[1200px] w-full mx-auto px-[15px]">
+            <div className="">
+              <div className="">
+                <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#000] mb-[80px]">
+                  Мы работаем с этими брендами <br />
+                  <span className="text-[#F03957]">и не только</span>
+                </h2>
+              </div>
+
+              <div className="flex items-center justify-between gap-[30px] mb-[40px]">
+                <a href="#" className="">
+                  <img src={right} alt="" className="" />
+                </a>
+
+                <a href="#" className="">
+                  <img src={artisans} alt="" className="" />
+                </a>
+
+                <a href="#" className="">
+                  <img src={boling} alt="" className="" />
+                </a>
+
+                <a href="#" className="">
+                  <img src={portkeys} alt="" className="" />
+                </a>
+
+                <a href="#" className="">
+                  <img src={synco} alt="" className="" />
+                </a>
+
+                <a href="#" className="">
+                  <img src={left} alt="" className="" />
+                </a>
+              </div>
+
+              <div className="flex items-center justify-center gap-2">
+                {[...Array(10)].map((_, index) => (
+                  <span
+                    key={index}
+                    className="w-[10px] h-[10px] bg-[#D9D9D9] rounded-full cursor-pointer"
+                  />
+                ))}
               </div>
             </div>
           </div>
