@@ -527,6 +527,18 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        {/* Section Mapping */}
+        <section className="">
+          <div class="relative w-full h-[670px]">
+            <iframe
+              src="https://yandex.com/map-widget/v1/-/YOUR_MAP_ID"
+              class="absolute top-0 left-0 w-full h-full"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
       </main>
     </>
   );
