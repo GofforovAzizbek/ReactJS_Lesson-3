@@ -11,6 +11,7 @@ import telebizor from "./assets/images/telebizor.png";
 import reaksiya from "./assets/images/reaksiya.svg";
 import lists from "./assets/images/lists.svg";
 import money from "./assets/images/money.svg";
+import spin from "./assets/images/spin.svg";
 
 // import BrandCarousel from "./BrandCarousel";
 
@@ -23,6 +24,13 @@ import synco from "./assets/images/synco.svg";
 // arrows
 import right from "./assets/images/right.svg";
 import left from "./assets/images/left.svg";
+
+// maps
+import googlemap from "./assets/images/googlemap.svg";
+import yandexmap from "./assets/images/yandexmap.svg";
+
+// raitings
+import starts from "./assets/images/starts.svg";
 
 const navLinks = [
   { id: 1, text: "Услуги", href: "#" },
@@ -38,7 +46,7 @@ export default function App() {
     <>
       {/* Header */}
       <header className="pt-[25px]">
-        <div className="max-w-[1200px] w-[100%] mx-auto px-[15px]">
+        <div className="max-w-[1200px] w-[100%] mx-auto px-[20px]">
           <nav className="flex items-center justify-between">
             {/* Logo */}
             <a href="/">
@@ -110,7 +118,7 @@ export default function App() {
       <main className="">
         {/* Section Hero */}
         <section className="pt-[76px] pb-[160px]">
-          <div className="max-w-[1200px] w-[100%] mx-auto px-[15px]">
+          <div className="max-w-[1200px] w-[100%] mx-auto px-[20px]">
             <div className="flex flex-col md:flex-col lg:flex-row justify-between items-start lg:items-center">
               {/* Matn qismi */}
               <div className="mb-10 lg:mb-0">
@@ -140,7 +148,7 @@ export default function App() {
 
         {/* Section Products */}
         <section className="pt-[80px] pb-[120px] bg-[#525252]">
-          <div className="max-w-[1200px] w-[100%] mx-auto px-[15px]">
+          <div className="max-w-[1200px] w-[100%] mx-auto px-[20px]">
             <div className="">
               <div className="flex items-center justify-between mb-[80px]">
                 <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#F7F5F5]">
@@ -304,8 +312,9 @@ export default function App() {
           </div>
         </section>
 
-        <section className="py-[80px]">
-          <div className="max-w-[1200px] w-full mx-auto px-[15px]">
+        {/* Section mini carusel */}
+        <section className="py-[120px]">
+          <div className="max-w-[1200px] w-full mx-auto px-[20px]">
             <div className="">
               <div className="">
                 <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#000] mb-[80px]">
@@ -344,9 +353,176 @@ export default function App() {
                 {[...Array(10)].map((_, index) => (
                   <span
                     key={index}
-                    className="w-[10px] h-[10px] bg-[#D9D9D9] rounded-full cursor-pointer"
+                    className="w-[10px] h-[10px] bg-[#D9D9D9] rounded-full cursor-pointer hover:bg-[#686868]"
                   />
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section raitings */}
+        <section className="pb-[80px]">
+          <div className="max-w-[1200px] w-full mx-auto px-[20px]">
+            <div className="">
+              <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#000] mb-[80px]">
+                Отзывы наших <br />
+                <span className="text-[#F03957]">клиентов</span>
+              </h2>
+
+              <div className="grid grid-cols-3 gap-[30px]">
+                <div className="p-[30px] rounded-[15px] bg-[#F7F5F5]">
+                  <div className="flex items-center justify-between mb-[15px]">
+                    <h3 className="font-inter font-bold text-[18px] leading-[175%]">
+                      Анастасия
+                    </h3>
+                    <a
+                      href="#"
+                      className="flex items-center font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline gap-[10px]"
+                    >
+                      Дата: 2022-02-23
+                      <img src={googlemap} alt="" className="" />
+                    </a>
+                  </div>
+                  <p className="mb-[15px]">
+                    Спасибо большое сервисному центру. Удобный график работы.
+                    Можно записаться через социальные сети. Дают гарантию,что
+                    самое главное ...
+                  </p>
+
+                  <div className="flex items-center justify-between">
+                    <a
+                      href=""
+                      className="font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline"
+                    >
+                      Читать полностью
+                    </a>
+                    <img src={starts} alt="" className="" />
+                  </div>
+                </div>
+
+                <div className="p-[30px] rounded-[15px] bg-[#F7F5F5]">
+                  <div className="flex items-center justify-between mb-[15px]">
+                    <h3 className="font-inter font-bold text-[18px] leading-[175%]">
+                      Ирек
+                    </h3>
+                    <a
+                      href="#"
+                      className="flex items-center font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline gap-[10px]"
+                    >
+                      Дата: 2022-07-21
+                      <img src={yandexmap} alt="" className="" />
+                    </a>
+                  </div>
+                  <p className="mb-[15px]">
+                    Спасибо большое сервисному центру. Удобный график работы.
+                    Можно записаться через социальные сети. Дают гарантию,что
+                    самое главное ...
+                  </p>
+
+                  <div className="flex items-center justify-between">
+                    <a
+                      href=""
+                      className="font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline"
+                    >
+                      Читать полностью
+                    </a>
+                    <img src={starts} alt="" className="" />
+                  </div>
+                </div>
+
+                <div className="p-[30px] rounded-[15px] bg-[#F7F5F5]">
+                  <div className="flex items-center justify-between mb-[15px]">
+                    <h3 className="font-inter font-bold text-[18px] leading-[175%]">
+                      Евгения
+                    </h3>
+                    <a
+                      href="#"
+                      className="flex items-center font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline gap-[10px]"
+                    >
+                      Дата: 2022-05-22
+                      <img src={googlemap} alt="" className="" />
+                    </a>
+                  </div>
+                  <p className="mb-[15px]">
+                    Спасибо большое сервисному центру. Удобный график работы.
+                    Можно записаться через социальные сети. Дают гарантию,что
+                    самое главное ...
+                  </p>
+
+                  <div className="flex items-center justify-between">
+                    <a
+                      href=""
+                      className="font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline"
+                    >
+                      Читать полностью
+                    </a>
+                    <img src={starts} alt="" className="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section contact */}
+        <section className="bg-[#525252] py-[120px]">
+          <div className="max-w-[1200px] w-full mx-auto px-[20px]">
+            <div className="flex items-baseline justify-between mb-[60px]">
+              <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#F7F5F5]">
+                У вас остались <br />
+                <span className="text-[#F03957]">вопросы?</span>
+              </h2>
+
+              <p className="max-w-[560px] w-[100%] pr-[240px] font-inter font-semibold text-[18px] leading-[175%] text-[#F7F5F5]">
+                Оставьте заявку, мы свяжемся с вами и ответим на них
+              </p>
+            </div>
+
+            {/* Inputlar */}
+            <div className="py-[80px] px-[100px] bg-[#F7F5F5] rounded-[20px]">
+              <div className="flex gap-[30px] mb-[40px]">
+                <div className="flex flex-col gap-[20px] w-[50%]">
+                  <input
+                    type="text"
+                    className="py-[15px] pl-[25px] border-[2px] border-[#D9D9D9] rounded-[10px] font-inter font-normal text-[16px] leading-[175%] outline-[#F03957]"
+                    placeholder="Ваше имя"
+                  />
+                  <input
+                    type="email"
+                    className="py-[15px] pl-[25px] border-[2px] border-[#D9D9D9] rounded-[10px] font-inter font-normal text-[16px] leading-[175%] outline-[#F03957]"
+                    placeholder="E-mail"
+                  />
+                  <input
+                    type="number"
+                    className="py-[15px] pl-[25px] border-[2px] border-[#D9D9D9] rounded-[10px] font-inter font-normal text-[16px] leading-[175%] outline-[#F03957]"
+                    placeholder="Телефон*"
+                  />
+                </div>
+
+                <div className="relative w-[50%]">
+                  {/* Textarea */}
+                  <textarea
+                    placeholder="Опишите проблему и добавьте видео неисправности"
+                    className="resize-none w-full h-full border-[2px] border-[#D9D9D9] rounded-[10px] px-[24px] py-[10px] outline-[#F03957]"
+                  />
+
+                  {/* File button */}
+                  <label className="absolute w-[33.1px] flex bottom-[25px] right-[25px]">
+                    <img src={spin} alt="" className="" />
+                    <input type="file" className="hidden" />
+                  </label>
+                </div>
+              </div>
+
+              <div className="flex items-center flex-col">
+                <button className="py-[15px] px-[45px] font-inter font-semibold text-[18px] leading-[175%] text-[#fff] bg-[#F03957] rounded-[10px] mb-[15px]">
+                  Оставить заявку
+                </button>
+                <p className="max-w-[230px] w-full font-inter font-semibold text-[10px] leading-[175%] pr-[10px]">
+                  Нажимая на данную кнопку вы соглашаетесь с политикой
+                  конфиденциальности
+                </p>
               </div>
             </div>
           </div>
