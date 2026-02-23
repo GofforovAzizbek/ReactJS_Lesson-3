@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logo from "./assets/images/logo.svg";
 import menubtn from "./assets/images/menubtn.svg";
 import closebtn from "./assets/images/closebtn.svg";
 import hero from "./assets/images/hero.png";
@@ -12,6 +11,11 @@ import reaksiya from "./assets/images/reaksiya.svg";
 import lists from "./assets/images/lists.svg";
 import money from "./assets/images/money.svg";
 import spin from "./assets/images/spin.svg";
+
+// Logos
+import logo from "./assets/images/logo.svg";
+import maplogo from "./assets/images/maplogo.svg";
+import footerlogo from "./assets/images/footerlogo.svg";
 
 // import BrandCarousel from "./BrandCarousel";
 
@@ -59,7 +63,7 @@ export default function App() {
                 <li key={link.id}>
                   <a
                     href={link.href}
-                    className="font-inter font-normal text-[18px] leading-[175%] tracking-[-0.05em] text-[#2E3235]"
+                    className="font-inter font-normal text-[18px] leading-[175%] tracking-[-0.05em] text-[#2E3235] hover:text-[#F03957]"
                   >
                     {link.text}
                   </a>
@@ -70,7 +74,7 @@ export default function App() {
             {/* Phone (desktop) */}
             <a
               href="tel:+74992262928"
-              className="hidden md:inline-block font-inter font-bold text-[20px] leading-[175%] tracking-[-0.05em] text-[#2E3235]"
+              className="hidden md:inline-block font-inter font-bold text-[20px] leading-[175%] tracking-[-0.05em] text-[#2E3235] hover:opacity-[0.3]"
             >
               +7 499 226 29 28
             </a>
@@ -129,10 +133,10 @@ export default function App() {
                   по ремонту техники в Москве
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-                  <button className="cursor-pointer font-inter font-semibold text-[18px] leading-[175%] text-white bg-[#F03957] border-[2px] border-[#F03957] py-[15px] px-[20px] rounded-[10px]">
+                  <button className="cursor-pointer font-inter font-semibold text-[18px] leading-[175%] text-white bg-[#F03957] border-[2px] border-[#F03957] py-[15px] px-[20px] rounded-[10px] hover:text-[#F03957] hover:bg-[white]">
                     Получить консультацию
                   </button>
-                  <button className="cursor-pointer font-inter font-semibold text-[18px] leading-[175%] py-[15px] px-[30px] border-[2px] rounded-[10px]">
+                  <button className="cursor-pointer font-inter font-semibold text-[18px] leading-[175%] py-[15px] px-[30px] border-[2px] rounded-[10px] hover:bg-black hover:text-white">
                     Смотреть прайс-лист
                   </button>
                 </div>
@@ -274,7 +278,7 @@ export default function App() {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-[30px]">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
               <div className="pt-[35px] pb-[80px] px-[30px] bg-[#C4C4C4] rounded-[20px]">
                 <img src={reaksiya} alt="" className="mb-[30px]" />
                 <h3 className="max-w-[240px] font-inter font-semibold text-[30px] leading-[150%] mb-[25px]">
@@ -467,7 +471,7 @@ export default function App() {
 
         {/* Section contact */}
         <section className="bg-[#525252] py-[120px]">
-          <div className="max-w-[1200px] w-full mx-auto px-[20px]">
+          <div className="max-w-[1200px] w-full mx-auto px-[15px]">
             <div className="flex items-baseline justify-between mb-[60px]">
               <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#F7F5F5]">
                 У вас остались <br />
@@ -529,17 +533,143 @@ export default function App() {
         </section>
 
         {/* Section Mapping */}
-        <section className="">
-          <div class="relative w-full h-[670px]">
-            <iframe
-              src="https://yandex.com/map-widget/v1/-/YOUR_MAP_ID"
-              class="absolute top-0 left-0 w-full h-full"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
+        <section className="relative w-full pt-[120px] pb-[230px]">
+          <iframe
+            src="https://yandex.com/map-widget/v1/-/YOUR_MAP_ID"
+            className="absolute inset-0 w-full h-full z-0"
+            allowFullScreen
+            loading="lazy"
+          />
+
+          <div className="relative z-10 max-w-[1200px] h-full mx-auto px-[20px] flex items-center">
+            <div className="bg-[#525252] py-[50px] pr-[22px] pl-[54px] rounded-[15px]">
+              <a href="/" className="block mb-[30px]">
+                <img src={maplogo} alt="Logo" className="" />
+              </a>
+
+              <p className="font-inter font-normal text-[16px] leading-[175%] text-[#EFEFEF] pr-[50px] mb-[25px]">
+                Москва, ул Шарикоподшипниковская д.4 к.4а
+              </p>
+
+              <a
+                href="mailto:info@krepair.ru"
+                className="block font-inter font-normal text-[16px] leading-[175%] text-[#EFEFEF] mb-[25px]"
+              >
+                info@krepair.ru
+              </a>
+
+              <a
+                href="tel:+74992262928"
+                className="block font-inter font-bold text-[20px] leading-[175%] text-[#DEDCDC]"
+              >
+                +7 499 226 29 28
+              </a>
+            </div>
           </div>
         </section>
       </main>
+
+      {/* Footer */}
+      <footer className="pt-[110px] pb-[90px] bg-[#000]">
+        <section className="">
+          <div className="max-w-[1200px] w-full mx-auto px-[15px]">
+            <div className="flex justify-between">
+              <div className="">
+                <a href="/" className="">
+                  <img src={footerlogo} alt="" className="" />
+                </a>
+              </div>
+
+              <div className="">
+                <ul className="flex flex-col gap-[20px]">
+                  <li className="">
+                    <a
+                      href=""
+                      className="hover:underline font-inter font-normal text-[16px] leading-[175%] tracking-[-0.05em] text-[#D9D9D9]"
+                    >
+                      Прайс-лист
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      href=""
+                      className="hover:underline font-inter font-normal text-[16px] leading-[175%] tracking-[-0.05em] text-[#D9D9D9]"
+                    >
+                      О компании
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      href=""
+                      className="hover:underline font-inter font-normal text-[16px] leading-[175%] tracking-[-0.05em] text-[#D9D9D9]"
+                    >
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="">
+                <ul className="flex flex-col gap-[20px]">
+                  <li className="">
+                    <a
+                      href=""
+                      className="hover:underline font-inter font-normal text-[16px] leading-[175%] tracking-[-0.05em] text-[#D9D9D9]"
+                    >
+                      Услуги
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      href=""
+                      className="hover:underline font-inter font-normal text-[16px] leading-[175%] tracking-[-0.05em] text-[#D9D9D9]"
+                    >
+                      Ремонт аудио техники
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      href=""
+                      className="hover:underline font-inter font-normal text-[16px] leading-[175%] tracking-[-0.05em] text-[#D9D9D9]"
+                    >
+                      Ремонт видео техники
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="">
+                <ul className="flex flex-col gap-[20px]">
+                  <li className="">
+                    <a
+                      href=""
+                      className="hover:underline font-inter font-normal text-[16px] leading-[175%] tracking-[-0.05em] text-[#D9D9D9]"
+                    >
+                      Ремонт телефонов
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      href=""
+                      className="hover:underline font-inter font-normal text-[16px] leading-[175%] tracking-[-0.05em] text-[#D9D9D9]"
+                    >
+                      Ремонт электротранспорта
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      href=""
+                      className="hover:underline font-inter font-normal text-[16px] leading-[175%] tracking-[-0.05em] text-[#D9D9D9]"
+                    >
+                      Политика конфиденциальности
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
     </>
   );
 }
