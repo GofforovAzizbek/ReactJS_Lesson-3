@@ -166,7 +166,7 @@ export default function App() {
                 </p>
               </div>
 
-              <div className="flex items-center justify-between bg-[#fff] rounded-[20px] pt-[50px] pb-[30px] pr-[140px] pl-[66px] mb-[60px]">
+              <div className="hidden lg:flex flex items-center justify-between bg-[#fff] rounded-[20px] pt-[50px] pb-[30px] pr-[140px] pl-[66px] mb-[60px]">
                 <div className="">
                   <h3 className="font-inter font-semibold text-[30px] leading-[175%] mb-[25px]">
                     Ремонт <span className="text-[#F03957]">аудио техники</span>
@@ -185,7 +185,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="flex flex-row-reverse items-center justify-between bg-[#fff] rounded-[20px] pt-[15px] pb-[35px] pr-[45px] pl-[85px] mb-[60px]">
+              <div className="hidden lg:flex flex flex-row-reverse items-center justify-between bg-[#fff] rounded-[20px] pt-[15px] pb-[35px] pr-[45px] pl-[85px] mb-[60px]">
                 <div className="">
                   <h3 className="font-inter font-semibold text-[30px] leading-[175%] mb-[25px]">
                     Ремонт{" "}
@@ -204,7 +204,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="flex items-stretch justify-between bg-[#fff] rounded-[20px] pt-[35px] pb-[0px] pr-[165px] pl-[65px] mb-[60px]">
+              <div className="hidden lg:flex flex items-stretch justify-between bg-[#fff] rounded-[20px] pt-[35px] pb-[0px] pr-[165px] pl-[65px] mb-[60px]">
                 <div className="pt-[25px]">
                   <h3 className="font-inter font-semibold text-[30px] leading-[175%] mb-[25px]">
                     Ремонт <span className="text-[#F03957]">телефонов</span>
@@ -222,7 +222,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="flex flex-row-reverse items-center justify-between bg-[#fff] rounded-[20px] pt-[54px] pb-[30px] pr-[50px] pl-[74px] mb-[60px]">
+              <div className="hidden lg:flex flex flex-row-reverse items-center justify-between bg-[#fff] rounded-[20px] pt-[54px] pb-[30px] pr-[50px] pl-[74px] mb-[60px]">
                 <div className="">
                   <h3 className="font-inter font-semibold text-[30px] leading-[175%] mb-[25px]">
                     Ремонт{" "}
@@ -241,7 +241,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between bg-[#fff] rounded-[20px] py-[35px] pr-[155px] pl-[65px] mb-[60px]">
+              <div className="hidden lg:flex flex items-center justify-between bg-[#fff] rounded-[20px] py-[35px] pr-[155px] pl-[65px] mb-[60px]">
                 <div className="">
                   <h3 className="font-inter font-semibold text-[30px] leading-[175%] mb-[25px]">
                     Ремонт <span className="text-[#F03957]">телевизоров</span>
