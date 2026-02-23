@@ -154,7 +154,7 @@ export default function App() {
         <section className="pt-[80px] pb-[120px] bg-[#525252]">
           <div className="max-w-[1200px] w-[100%] mx-auto px-[20px]">
             <div className="">
-              <div className="flex items-center justify-between mb-[80px]">
+              <div className="flex flex-col md:flex-row justify-between items-start lg:items-center mb-[80px]">
                 <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#F7F5F5]">
                   Наши услуги <br />
                   <span className="text-[#F03957]">для вас</span>
@@ -265,7 +265,7 @@ export default function App() {
         {/* Section Products messages */}
         <section className="py-[120px] bg-[#F5F5F5]">
           <div className="max-w-[1200px] w-[100%] mx-auto px-[15px]">
-            <div className="flex items-center justify-between mb-[80px]">
+            <div className="flex flex-col md:flex-row justify-between items-start lg:items-center mb-[80px]">
               <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#000]">
                 Наши <br />
                 <span className="text-[#F03957]">Преимущества</span>
@@ -374,7 +374,7 @@ export default function App() {
                 <span className="text-[#F03957]">клиентов</span>
               </h2>
 
-              <div className="grid grid-cols-3 gap-[30px]">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
                 <div className="p-[30px] rounded-[15px] bg-[#F7F5F5]">
                   <div className="flex items-center justify-between mb-[15px]">
                     <h3 className="font-inter font-bold text-[18px] leading-[175%]">
@@ -472,20 +472,20 @@ export default function App() {
         {/* Section contact */}
         <section className="bg-[#525252] py-[120px]">
           <div className="max-w-[1200px] w-full mx-auto px-[15px]">
-            <div className="flex items-baseline justify-between mb-[60px]">
-              <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#F7F5F5]">
+            <div className="flex flex-col md:flex-row items-baseline justify-between mb-[60px]">
+              <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#F7F5F5] mb-4 md:mb-0">
                 У вас остались <br />
                 <span className="text-[#F03957]">вопросы?</span>
               </h2>
 
               <p className="max-w-[560px] w-[100%] pr-[240px] font-inter font-semibold text-[18px] leading-[175%] text-[#F7F5F5]">
-                Оставьте заявку, мы свяжемся с вами и ответим на них
+                Оставьте заявку, мы свяжемся с вами и ответим на них{" "}
               </p>
             </div>
 
             {/* Inputlar */}
-            <div className="py-[80px] px-[100px] bg-[#F7F5F5] rounded-[20px]">
-              <div className="flex gap-[30px] mb-[40px]">
+            <div className="py-[40px] px-[20px] md:py-[60px] md:px-[40px] lg:py-[80px] lg:px-[100px] bg-[#F7F5F5] rounded-[20px]">
+              <div className="flex flex-col lg:flex-row gap-[20px] mb-[40px]">
                 <div className="flex flex-col gap-[20px] w-[50%]">
                   <input
                     type="text"
@@ -573,7 +573,7 @@ export default function App() {
       <footer className="pt-[110px] pb-[90px] bg-[#000]">
         <section className="">
           <div className="max-w-[1200px] w-full mx-auto px-[15px]">
-            <div className="flex justify-between">
+            <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-0 justify-between">
               <div className="">
                 <a href="/" className="">
                   <img src={footerlogo} alt="" className="" />
