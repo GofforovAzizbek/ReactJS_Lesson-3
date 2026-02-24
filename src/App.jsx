@@ -266,7 +266,7 @@ export default function App() {
         <section className="py-[120px] bg-[#F5F5F5]">
           <div className="max-w-[1200px] w-[100%] mx-auto px-[15px]">
             <div className="flex flex-col md:flex-row justify-between items-start lg:items-center mb-[80px]">
-              <h2 className="font-montserrat font-bold text-[45px] leading-[175%] uppercase text-[#000]">
+              <h2 className="font-montserrat font-bold uppercase text-[#000] leading-[175%] text-[30px] md:text-[35px] lg:text-[45px]">
                 Наши <br />
                 <span className="text-[#F03957]">Преимущества</span>
               </h2>
@@ -336,15 +336,15 @@ export default function App() {
                   <img src={artisans} alt="" className="" />
                 </a>
 
-                <a href="#" className="">
+                <a href="#" className="hidden lg:block">
                   <img src={boling} alt="" className="" />
                 </a>
 
-                <a href="#" className="">
+                <a href="#" className="hidden lg:block">
                   <img src={portkeys} alt="" className="" />
                 </a>
 
-                <a href="#" className="">
+                <a href="#" className="hidden lg:block">
                   <img src={synco} alt="" className="" />
                 </a>
 
@@ -376,13 +376,13 @@ export default function App() {
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
                 <div className="p-[30px] rounded-[15px] bg-[#F7F5F5]">
-                  <div className="flex items-center justify-between mb-[15px]">
+                  <div className="flex items-end md:items-center justify-between mb-[15px]">
                     <h3 className="font-inter font-bold text-[18px] leading-[175%]">
                       Анастасия
                     </h3>
                     <a
                       href="#"
-                      className="flex items-center font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline gap-[10px]"
+                      className="flex flex-col-reverse items-end md:flex-row md:items-center md:gap-[10px] font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline gap-0"
                     >
                       Дата: 2022-02-23
                       <img src={googlemap} alt="" className="" />
@@ -394,25 +394,29 @@ export default function App() {
                     самое главное ...
                   </p>
 
-                  <div className="flex items-center justify-between">
+                  <div className="">
                     <a
                       href=""
-                      className="font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline"
+                      className="flex flex-col gap-[8px] md:flex-row md:justify-between font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline"
                     >
                       Читать полностью
+                      <img
+                        src={starts}
+                        alt=""
+                        className="w-[120px] h-auto self-start md:self-auto"
+                      />
                     </a>
-                    <img src={starts} alt="" className="" />
                   </div>
                 </div>
 
                 <div className="p-[30px] rounded-[15px] bg-[#F7F5F5]">
-                  <div className="flex items-center justify-between mb-[15px]">
+                  <div className="flex items-end md:items-center justify-between mb-[15px]">
                     <h3 className="font-inter font-bold text-[18px] leading-[175%]">
                       Ирек
                     </h3>
                     <a
                       href="#"
-                      className="flex items-center font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline gap-[10px]"
+                      className="flex flex-col-reverse items-end md:flex-row md:items-center md:gap-[10px] font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline gap-0"
                     >
                       Дата: 2022-07-21
                       <img src={yandexmap} alt="" className="" />
@@ -424,25 +428,29 @@ export default function App() {
                     самое главное ...
                   </p>
 
-                  <div className="flex items-center justify-between">
+                  <div className="">
                     <a
                       href=""
-                      className="font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline"
+                      className="flex flex-col gap-[8px] md:flex-row md:justify-between font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline"
                     >
                       Читать полностью
+                      <img
+                        src={starts}
+                        alt=""
+                        className="w-[120px] h-auto self-start md:self-auto"
+                      />
                     </a>
-                    <img src={starts} alt="" className="" />
                   </div>
                 </div>
 
                 <div className="p-[30px] rounded-[15px] bg-[#F7F5F5]">
-                  <div className="flex items-center justify-between mb-[15px]">
+                  <div className="flex items-end md:items-center justify-between mb-[15px]">
                     <h3 className="font-inter font-bold text-[18px] leading-[175%]">
                       Евгения
                     </h3>
                     <a
                       href="#"
-                      className="flex items-center font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline gap-[10px]"
+                      className="flex flex-col-reverse items-end md:flex-row md:items-center md:gap-[10px] font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline gap-0"
                     >
                       Дата: 2022-05-22
                       <img src={googlemap} alt="" className="" />
@@ -454,14 +462,18 @@ export default function App() {
                     самое главное ...
                   </p>
 
-                  <div className="flex items-center justify-between">
+                  <div className="">
                     <a
                       href=""
-                      className="font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline"
+                      className="flex flex-col gap-[8px] md:flex-row md:justify-between font-inter font-normal text-[16px] leading-[175%] text-[#6F7375] underline"
                     >
                       Читать полностью
+                      <img
+                        src={starts}
+                        alt=""
+                        className="w-[120px] h-auto self-start md:self-auto"
+                      />
                     </a>
-                    <img src={starts} alt="" className="" />
                   </div>
                 </div>
               </div>
@@ -478,7 +490,7 @@ export default function App() {
                 <span className="text-[#F03957]">вопросы?</span>
               </h2>
 
-              <p className="max-w-[560px] w-[100%] pr-[240px] font-inter font-semibold text-[18px] leading-[175%] text-[#F7F5F5]">
+              <p className="max-w-[560px] w-full font-inter font-semibold text-[18px] leading-[175%] text-[#F7F5F5] pr-0 lg:pr-[240px]">
                 Оставьте заявку, мы свяжемся с вами и ответим на них{" "}
               </p>
             </div>
@@ -486,7 +498,7 @@ export default function App() {
             {/* Inputlar */}
             <div className="py-[40px] px-[20px] md:py-[60px] md:px-[40px] lg:py-[80px] lg:px-[100px] bg-[#F7F5F5] rounded-[20px]">
               <div className="flex flex-col lg:flex-row gap-[20px] mb-[40px]">
-                <div className="flex flex-col gap-[20px] w-[50%]">
+                <div className="flex flex-col gap-[20px] w-full md:w-[50%]">
                   <input
                     type="text"
                     className="py-[15px] pl-[25px] border-[2px] border-[#D9D9D9] rounded-[10px] font-inter font-normal text-[16px] leading-[175%] outline-[#F03957]"
@@ -504,11 +516,11 @@ export default function App() {
                   />
                 </div>
 
-                <div className="relative w-[50%]">
+                <div className="relative w-full md:w-[50%]">
                   {/* Textarea */}
                   <textarea
                     placeholder="Опишите проблему и добавьте видео неисправности"
-                    className="resize-none w-full h-full border-[2px] border-[#D9D9D9] rounded-[10px] px-[24px] py-[10px] outline-[#F03957]"
+                    className="resize-none w-full h-[300px] md:h-full border-[2px] border-[#D9D9D9] rounded-[10px] px-[24px] py-[10px] outline-[#F03957]"
                   />
 
                   {/* File button */}
@@ -533,7 +545,7 @@ export default function App() {
         </section>
 
         {/* Section Mapping */}
-        <section className="relative w-full pt-[120px] pb-[230px]">
+        <section className="relative w-full pt-0 pb-[350px] px-0 md:pt-[120px] md:pb-[230px]">
           <iframe
             src="https://yandex.com/map-widget/v1/-/YOUR_MAP_ID"
             className="absolute inset-0 w-full h-full z-0"
@@ -541,8 +553,8 @@ export default function App() {
             loading="lazy"
           />
 
-          <div className="relative z-10 max-w-[1200px] h-full mx-auto px-[20px] flex items-center">
-            <div className="bg-[#525252] py-[50px] pr-[22px] pl-[54px] rounded-[15px]">
+          <div className="relative z-10 max-w-[1200px] h-full mx-auto flex items-center">
+            <div className="bg-[#525252] py-[50px] pr-[22px] pl-[54px] rounded-t-none rounded-b-[15px] md:rounded-[15px]">
               <a href="/" className="block mb-[30px]">
                 <img src={maplogo} alt="Logo" className="" />
               </a>
